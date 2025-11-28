@@ -1,0 +1,72 @@
+{
+    "name": "oxapay/oxapay-laravel",
+    "description": "Official Laravel SDK for OxaPay crypto payment gateway (Laravel 8-12).",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "OxaPay",
+            "email": "dev@oxapay.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "oxapay",
+        "crypto",
+        "payments",
+        "gateway",
+        "sdk"
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/http": "^8.0|^9.0|^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.4",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "larastan/larastan": "^3.0"
+    },
+    "scripts": {
+        "test": "pest",
+        "cs-fix": "php-cs-fixer fix --config=.php-cs-fixer.php",
+        "phpstan": "phpstan analyse -c phpstan.neon.dist --ansi"
+    },
+    "autoload": {
+        "psr-4": {
+            "OxaPay\\Laravel\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OxaPay\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OxaPay\\Laravel\\Providers\\OxaPayServiceProvider"
+            ],
+            "aliases": {
+                "OxaPay": "OxaPay\\Laravel\\Support\\Facades\\OxaPay"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/oxapay/oxapay-laravel/issues",
+        "email": "dev@oxapay.com"
+    },
+    "homepage": "https://oxapay.com",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
