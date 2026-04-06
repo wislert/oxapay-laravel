@@ -2,8 +2,8 @@
 
 Official Laravel SDK for [OxaPay](https://oxapay.com) — accept crypto payments, exchanges, and payouts.
 
-> **Frameworks:** Laravel 8–12  
-> **PHP:** 8.0+ (Laravel 8–9) / 8.1+ (Laravel 10) / 8.2+ (Laravel 11–12)  
+> **Frameworks:** Laravel 8–13  
+> **PHP:** 8.0+ (Laravel 8–9) / 8.1+ (Laravel 10) / 8.2+ (Laravel 11–12) / 8.3+ (Laravel 13)   
 > **Docs:** https://docs.oxapay.com
 
 ## Installation

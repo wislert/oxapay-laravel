@@ -1,6 +1,6 @@
 {
     "name": "oxapay/oxapay-laravel",
-    "description": "Official Laravel SDK for OxaPay crypto payment gateway (Laravel 8-12).",
+    "description": "Official Laravel SDK for OxaPay crypto payment gateway (Laravel 8-13).",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
@@ -19,8 +19,8 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/http": "^8.0|^9.0|^10.0|^11.0|^12.0"
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0"
     },
     "require-dev": {
         "pestphp/pest": "^2.0",
